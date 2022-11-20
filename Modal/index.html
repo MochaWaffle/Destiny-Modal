@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Modal w Bootstrap 5</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="position-relative h-100 cover-image">
+<div class="position-absolute start-50 translate-middle-x text-white text-center p-3 cover-caption">
+  <h1 class="display-1">This Week At Bungie</h1>
+  <p>This week at Bungie (also known as TWAB) is Bungie's weekly blog post, which contains their weekly update for the game Destiny 2, and other news regarding the week. It also contains movie of the week, art of the week, and much more! You can check out this week at Bungie right here <a href="https://www.bungie.net/en/Explore/Detail/News/50782" target="_blank">https://www.bungie.net/en/Explore/Detail/News/50782</a> 
+</p>
+  <a href="https://www.bungie.net/en/News" class="btn btn-primary" target="_blank">News</a>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#destinyModal">
+  TWAB Signup
+</button>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="destinyModal" tabindex="-1" aria-labelledby="destinyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-white">
+        <h5 class="modal-title" id="destinyModalLabel">Sign up to recieve Destiny 2 TWAB!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-dark">
+        <div class="row">
+          <div class="col-6">
+            <img src="https://pbs.twimg.com/profile_images/882030782276968448/fhGb6cpO.jpg">
+          </div>
+          <div class="col-6">
+            <form>
+  <div class="mb-3">
+    <label for="destinyInputEmail1" class="form-label text-white">Email address</label>
+    <input type="email" class="form-control" id="destinyInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="destinyInputPassword1" class="form-label text-white">Password</label>
+    <input type="password" class="form-control" id="destinyInputPassword1">
+  </div>
+</form>
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Sign me up!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
